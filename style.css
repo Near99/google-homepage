@@ -4,6 +4,8 @@ body {
     padding: 0;
 }
 
+
+/* header */
 header {
     padding-top: 5px;
     display: flex;
@@ -18,7 +20,7 @@ header > div > ul {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    padding: 1.2em;
+    padding: 0.7em;
 
     /*
     border: blue solid 2px;
@@ -44,65 +46,113 @@ header a:hover {
 }
 
 
-/*
-header > div:nth-child(2) {
-    border-color: red;
+
+/* main section */
+section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    
+    /* reserved */
+    margin-top: 0;
+    height: auto;
+    padding: 165px 0 20px 0;
+    /*border: black solid 2px;*/
 }
 
-header > div {
-    border: black solid 2px;
-}
-*/
+section > div {
+    text-align: center;
 
-/*
+    /*
+    border: green solid 2px;
+    width: 600px;
+    height: 100px;
+    */
+}
+
+section > div:nth-child(2) {
+    padding-top: 30px;
+}
+
+#searchBarShape {
+    border: 1px solid #dfe1e5;
+    width: 582px;
+    height: 44px;
+    border-radius: 24px;
+    background-color: #fff;   
+}
+
+#searchBarShape:focus {
+    outline: #fff;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+#searchAndLuckyButton {
+    padding-top: 20px;
+}
+
+#searchButtonStyle > button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    height: 36px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    font-size: 14px;
+    color: #3c4043;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#searchButtonStyle > button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+#languageOffered {
+    font-size: small;
+}
+
+#languageOffered a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+#languageOffered a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* combinator usages
+
 header > div:nth-child(2) > ul > li:nth-child(3){
     list-style: circle;
 }
-*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*select the second child*/
-/*
 header > div:nth-child(2) {
     border: green solid 10px;
 }
 */
 
 
-/*
-header ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-    list-style: none;
-    color: #222;
-    margin: 0;
-    padding-left: 10px;
+/* one possiable solution for profile images adjustment.
+
+#navcontainer a img {
+	vertical-align: middle;
 }
 
-
-header a {
-    text-decoration: none;
-    color: #000000;
-    display: block;
-    padding: 1em;
-    font-size: 20px;
-}
 */
+
+
+
+
+
+
+
