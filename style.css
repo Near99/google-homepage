@@ -9,30 +9,34 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    justify-content: space-around;
+    /*
     border: black solid 2px;
-
+    */
 }
 
 header > div > ul {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    padding: 0.4em;
+    padding: 1.2em;
 
+    /*
     border: blue solid 2px;
     padding: 2em;
+    */
 }
 
 header a {
     text-decoration: none;
     color: #222;
-    padding: 1.4em;
+    padding: 0.5em;
     font-size: 20px;
 
+    /*
     align-self:auto;
     padding: 2.5em;
     border: green solid 2px;
+    */
 }
 
 header a:hover {
@@ -40,6 +44,7 @@ header a:hover {
 }
 
 
+/*
 header > div:nth-child(2) {
     border-color: red;
 }
@@ -47,8 +52,13 @@ header > div:nth-child(2) {
 header > div {
     border: black solid 2px;
 }
+*/
 
-
+/*
+header > div:nth-child(2) > ul > li:nth-child(3){
+    list-style: circle;
+}
+*/
 
 
 
